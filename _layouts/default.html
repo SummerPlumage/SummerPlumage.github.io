@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-<html lang="en">
-  {% include head.html %}
-  <body>
-      {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-        {{ content }}
-      {% include footer.html %}
-  </body>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+
+   {% include header.html %}
+
+   <div class="content">
+      <div class="container">
+         {{ content }}
+      </div>
+   </div><!-- end .content -->
+
+   {% include footer.html %}
+   {% include scripts.html %}
+
+</body>
+
 </html>

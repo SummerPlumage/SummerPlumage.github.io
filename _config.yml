@@ -1,20 +1,28 @@
-# Site settings
-title: 김끄덕
-description: Jekyll Theme Minimal Resume
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://SummerPlumage.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: Long Haul
+description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
 
-# User settings
-username: 김끄덕
-user_description: HI
-user_title: Developer
-email: ""
-# twitter_username: lorem_ipsum
-github_username:  roptibug
-# gplus_username:  lorem_ipsum
+url: http://brianmaierjr.github.com/long-haul
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
-# Google-analytics
-google-analytics:
-  id: ""
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
 
-exclude: ['package.json', 'src' , 'node_modules']
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+social:
+  github: brianmaierjr
+  twitter: brianmaierjr
+  facebook: brianmaierjr
+  email: brimaidesigns@gmail.com
+
+google_analytics: "UA-58263416-1"

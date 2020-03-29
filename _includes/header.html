@@ -1,19 +1,16 @@
-<div id="particles-js">
-  <div class="header">
-      <h1>
-        <span class="site-title">{{ site.username }}</span>
-        <span class="site-description">{{ site.user_title }}</span>
-      </h1>
-      <div class="header-icons">
-        <a aria-label="Send email" href="mailto:roptibug@gmail.com"><i class="icon fa fa-envelope"></i></a>
-        <!-- <a aria-label="My Instagram" target="_blank" href="https://www.instagram.com/mauriciourraco7"><i class="icon fa fa-instagram" aria-hidden="true"></i></a>-->
-        <!--<a aria-label="My Facebook" target="_blank" href="https://www.facebook.com/mauricio.urraco"><i class="icon fa fa-facebook" aria-hidden="true"></i></a>-->
-        <!--<a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/murraco"><i class="icon fa fa-linkedin-square" aria-hidden="true"></i></a>-->
-        <a aria-label="My Github" target="_blank" href="https://github.com/SummerPluage"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-links">
-        <!-- <a class="link" href="#about" data-scroll>About Me</a> -->
-      </div>
-  </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-</div>
+ <div class="header">
+     <div class="container">
+         <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+         <nav class="nav-collapse">
+             <ul class="noList">
+                 {% for link in site.navigation %}{% assign current = nil %}{% if page.url contains link.url or forloop.first and page.url == '/' or page.url == 'index.html' %}{% assign current = 'current' %}{% endif %}
+                 <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
+                     <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                 </li> 
+                 {% endfor %}
+                 <li> <a href="https://github.com/brianmaierjr/long-haul" target="_blank">GitHub</a></li>
+                 <li><a href="https://github.com/brianmaierjr/long-haul/archive/master.zip">Download Theme</a></li>
+             </ul>
+         </nav>
+     </div>
+ </div><!-- end .header -->

@@ -1,21 +1,28 @@
 {
-  "name": "jekyll-theme-minimal-resume",
-  "version": "1.0.0",
-  "description": "This is a simple Jekyll theme for a minimal resume website.",
-  "main": "index.js",
+  "name": "long-haul",
+  "version": "0.0.0",
+  "description": "A minimal, type-focused Jekyll theme. ",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mauricio Urraco <mauriurraco@gmail.com>",
+  "author": "Brian Maier Jr.",
   "license": "MIT",
-  "dependencies": {
-    "browser-sync": "^2.18.6",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^6.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-uglify": "^3.0.2"
-  }
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "1.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-sass": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianmaierjr/long-haul.git"
+  },
+  "keywords": [
+    "jekyll",
+    "gulp",
+    "sass",
+    "browsersync"
+  ]
 }
