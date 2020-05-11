@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "포스트"
-    url: /post/
+    url: /posts/
   - title: "About"
     url: /about/
   # - title: "Sample Posts"
