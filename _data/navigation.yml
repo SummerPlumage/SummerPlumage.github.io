@@ -4,8 +4,8 @@ main:
     url: /categories/
   - title: "About"
     url: /about/
-  - title: "JAVA"
-    url: /categories/JAVA/
+  #- title: "JAVA"
+  #  url: /categories/JAVA/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
