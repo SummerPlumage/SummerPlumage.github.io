@@ -20,8 +20,8 @@ title                    : "Pinomad"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Pinomad"
-description              : "늙은아이의 블로그"
-url                      : "https://pinomad.github.io"
+description              : "불로그"
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -30,9 +30,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "pinomad-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -95,13 +95,13 @@ analytics:
 author:
   name             : "Pinomad"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "늙은아이의 블로그"
-  location         : "South Korea"
+  bio              : "불로그"
+  #location         : "Somewhere"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: mailto:happyonion@kakao.com
+      # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -113,7 +113,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/pinomad"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -132,7 +132,7 @@ footer:
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-       url: "https://github.com/pinomad"
+      # url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
@@ -207,9 +207,9 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # 첫페이지에 보여줄 최근게시물 수
+paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -276,17 +276,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments:  true
+      comments: # true
       share: true
       related: true
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      read_time: false
-      comments: true
-      share: true
-      related: false
