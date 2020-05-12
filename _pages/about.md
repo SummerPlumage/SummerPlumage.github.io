@@ -1,9 +1,7 @@
 ---
-title: "이 블로그 설명서"
+title: ""
 permalink: /about/
 layout: single
 ---
 
-## pinomad.github.io 블로그
-
- 설명
+안녕하세요 늙은아이입니다.
