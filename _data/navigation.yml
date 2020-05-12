@@ -1,9 +1,11 @@
 # main links
 main:
-  - title: "포스트"
-    url: /posts/
+  - title: "Categories"
+    url: /categories/
   - title: "About"
     url: /about/
+  - title: "JAVA"
+    url: /categories/JAVA/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
