@@ -2,9 +2,9 @@
 title:  "Markdown사용법"
 
 categories:
-  - markdown
+  - Markdown
 tags:
-  - markdown
+  - Markdown
 ---
 ## Heading
 
