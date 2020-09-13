@@ -18,13 +18,13 @@ JAVA도 Javascript처럼 함수지향적인 문법이 필요하다고 생각하�
 JAVA 8부터 지원.
 
 ## 기존 인터페이스 사용법
-```JAVA
+```java
 //인터페이스 작성
 public interface LambdaExample {
     public int sum(int a, int b);
 }
 ```
-```JAVA
+```java
 //구현부
 public class LambdaExampleImpl implements LambdaExample{
     public int sum(int a, int b){
@@ -32,7 +32,7 @@ public class LambdaExampleImpl implements LambdaExample{
   }
 }
 ```
-```JAVA
+```java
 //실행부
 public class Main {
     public static void main(String[] args){
@@ -43,14 +43,14 @@ public class Main {
 ```
 
 ## 람다 사용법
-```JAVA
+```java
 //인터페이스 작성
 @FunctionalInterface
 public interface LambdaExample {
     public int sum(int a, int b);
 }
 ```
-```JAVA
+```java
 public class Main {
     public static void main(String[] args){
         LambdaExample r2 = (int a, int b) -> {return a+b;};
