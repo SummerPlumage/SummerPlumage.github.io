@@ -1,10 +1,10 @@
 ---
-title:  "RAMBDA"
+title:  "LAMBDA"
 
 categories:
   - JAVA
 tags:
-  - RAMBDA
+  - LAMBDA
   - 익명함수
   - 1급객체
   - FunctionalInterface
@@ -20,13 +20,13 @@ JAVA 8부터 지원.
 ## 기존 인터페이스 사용법
 ```JAVA
 //인터페이스 작성
-public interface RamdaExample {
+public interface LambdaExample {
     public int sum(int a, int b);
 }
 ```
 ```JAVA
 //구현부
-public class RamdaExampleImpl implements RambdaExample{
+public class LambdaExampleImpl implements LambdaExample{
     public int sum(int a, int b){
       return a+b;
   }
@@ -36,7 +36,7 @@ public class RamdaExampleImpl implements RambdaExample{
 //실행부
 public class Main {
     public static void main(String[] args){
-        RamdaExample r1 = new RamdaExampleImpl();
+        LambdaExample r1 = new LambdaExampleImpl();
         System.out.println(r1.sum(1,2));
     }
 }
@@ -46,14 +46,14 @@ public class Main {
 ```JAVA
 //인터페이스 작성
 @FunctionalInterface
-public interface RamdaExample {
+public interface LambdaExample {
     public int sum(int a, int b);
 }
 ```
 ```JAVA
 public class Main {
     public static void main(String[] args){
-        RamdaExample r2 = (int a, int b) -> {return a+b;};
+        LambdaExample r2 = (int a, int b) -> {return a+b;};
         System.out.println(r2.sum(1,2));
     }
 }
