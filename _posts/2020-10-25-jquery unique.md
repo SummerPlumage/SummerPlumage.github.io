@@ -31,7 +31,7 @@ console.log(yearRtn);
 Description: Sorts an array of DOM elements, in place, with the duplicates removed.
 Note that this only works on arrays of DOM elements, not strings or numbers.
 ```
-해당 Description과 자세한 스펙은 https://api.jquery.com/jquery.unique/ 에서 확인가능.
+해당 Description과 자세한 스펙은 <https://api.jquery.com/jquery.unique/> 에서 확인가능.
 
 따라서 문자나 숫자 배열 중복제거를 하고싶으면 따로 메소드를 만들어야 한다.
 grep과 inArray 메소드를 이용하여 원하는 결과를 얻을 수 있다.  
