@@ -17,12 +17,12 @@ tags:
 HTML에서 셀렉트박스 option 중복처리를 하려고 option들을 배열에 담아서 jQuery.unique()를 사용했는데 원하는 값이 나오지 않았다.
 
 ```javascript
-var yearArr = ["A","B","B","A"];
-var yearRtn = $.unique(yearArr);
-console.log(yearRtn);
+var duplArr = ["A","B","B","A"];
+var uniqueRtn = $.unique(duplArr);
+console.log(uniqueRtn);
 
-//원하는값 -> yearArr = ["A","B"];
-//실제값 -> yearArr = ["A","B","A"];
+//원하는값 -> uniqueRtn = ["A","B"];
+//실제값 -> uniqueRtn = ["A","B","A"];
 ```
 
 왜 안되는지 헤매다가 이 메소드는 DOM elements array 중복처리에만 작동하고 numbers나 Strings은 작동하지 않는것을 발견.
@@ -67,9 +67,9 @@ function unique(array) {
         return index == $.inArray(el, array);
     });
 }
-var yearArr = ["A","B","B","A"];
-var yearRtn = unique(yearArr);
-console.log(yearRtn);
+var duplArr = ["A","B","B","A"];
+var uniqueRtn = unique(duplArr);
+console.log(uniqueRtn);
 
-//원하는값 -> yearArr = ["A","B"]; 정상출력
+//원하는값 -> uniqueRtn = ["A","B"]; 정상출력
 ```
