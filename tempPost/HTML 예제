@@ -65,9 +65,13 @@ css
 HTML만으로 웹 페이지를 제작할 경우 HTML 요소의 세부 스타일을 일일이 따로 지정.
 
 
-2. 선택자
+2. 문법
 http://tcpschool.com/css/css_intro_syntax
 
 3. css적용법
 인라인 스타일, 내부 스타일 시트, 외부 스타일 시트
-href = "" -> 하이퍼텍스트레퍼런스, 이 하이퍼텍스트가 참조하고있는것
+<head>
+    <link rel="stylesheet" href="/examples/media/expand_style.css">
+</head>
+rel -> 관계?
+href -> 하이퍼텍스트레퍼런스, 링크주소라고 보면됨
