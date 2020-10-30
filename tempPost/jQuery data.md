@@ -25,3 +25,4 @@ $(selector).data(obj)
 
 $( "body" ).data( "foo", 52 );
 $( "body" ).data( "bar", { isManual: true } );
+http://www.nextree.co.kr/p10155/

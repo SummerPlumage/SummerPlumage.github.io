@@ -1,0 +1,9 @@
+TIMEZONE('UTC', TO_TIMESTAMP(PVMYI.BK_STRT_DT,'YYYYMMDD'))::DATE BETWEEN TIMEZONE('UTC', TO_DATE(REPLACE(#{startDtime}, '-', ''), 'YYYYMMDD'))
+			  	AND TIMEZONE('UTC', TO_DATE(REPLACE(#{endDtime}, '-', ''), 'YYYYMMDD'))
+
+
+
+PVMYI.BK_STRT_DT가 varchar라서 BETWEEN이 안먹힘
+날짜형식으로 변환해야하는데 TO_TIMESTAMP쓰면 시분초까지 나와서 잘라내야함
+잘라내기위해 REPLACE를 쓰려고하니 char형태만 가능함
+이리저리 삽질하다가 ::DATE로 timestamp에서 날짜만 출력하는 간단한 방법 찾아냄
