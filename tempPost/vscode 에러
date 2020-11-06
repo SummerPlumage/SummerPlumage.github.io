@@ -1,0 +1,7 @@
+터미널 실행 에러
+powershell이 차단되었을 경우 vsCode 에서 터미널 실행시 에러가 난다.
+해결법 :
+ctrl+, 로 세팅을 settings를 열고 검색창에 terminal.integrated.shell.windows 검색
+-> click Edit in settings.json -> set CMD path "terminal.integrated.shell.windows": "C:\\windows\\System32\\cmd.exe"
+
+이 방법은 powershell이 열리도록 하는건 아니고 cmd를 powershell대신 이용하는 방법.

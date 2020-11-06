@@ -1,1 +1,12 @@
 https://docu94.tistory.com/37
+
+ D ocument O bject M ODEL
+
+ img https://www.w3schools.com/js/pic_htmltree.gif
+
+w3c dom 표준
+Core DOM-모든 문서 유형에 대한 표준 모델
+XML DOM-XML 문서의 표준 모델
+HTML DOM-HTML 문서의 표준 모델
+
+즉 , HTML DOM은 HTML 요소를 가져오고, 변경하고, 추가 또는 삭제하는 방법에 대한 표준입니다.
