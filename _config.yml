@@ -185,6 +185,7 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+parse_block_html: true
 
 
 # Markdown Processing
