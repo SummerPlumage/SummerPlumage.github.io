@@ -1,0 +1,7 @@
+html input text 같은 네임 여러개면 조회시
+
+input의 값이 배열로 전환되어서 ,가 찍혀서 조회됨
+
+
+# var, let, const
+https://gist.github.com/LeoHeo/7c2a2a6dbcf80becaaa1e61e90091e5d
