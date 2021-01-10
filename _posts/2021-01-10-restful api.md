@@ -1,5 +1,5 @@
 ---
-title:  "REST"
+title:  "REST API"
 
 categories:
   -
@@ -38,9 +38,11 @@ REST 서버와, 클라이언트는 서로간의 역할이 확실하게 구분되
 Rest 서버는 다중 계층으로 구성될 수 있으며 로드 밸런싱, 암호화, 사용자 인증 등을 추가하여 구조상의 유연성을 둘 수 있다.
 
 
-## REST API란
-Rest 기반의 규칙들을 지켜서 설계된 API를 Rest API라 한다.
-
+## REST? REST API? RESTful?
+용어가 헷갈려서 정리하자면,
+Rest 기반의 규칙들을 지켜서 설계된 API를 Rest API라 한다.  
+Restful은 말그대로 REST하다 라고 볼 수 있고, REST API는 RESTful 하다 라고 할 수 있겠다.
+결국 다 같은말이면서 같은말이 아니다.
 
 ## REST API 설계규칙
 REST에서 가장 중요한 기본적인 규칙은 두 가지이다.
