@@ -1,0 +1,16 @@
+#wrap{width:400px; height:530px; margin:0 auto; margin-top: 100px;  font-family: 'Goldman', sans-serif; border: solid #FAB48E 2px; border-radius: 20px;}
+#header{}
+#main{position:relative; height:400px; border-top: solid #FAB48E 2px; text-align: center; padding-top:20px; background-image: url(); background-size: cover; }
+#footer{border-top: solid #FAB48E 2px; text-align: center;}
+.btnStart{line-height:40px; display:inline-block; width:49%; text-align: center; border-right:solid #FAB48E 2px;}
+.btnEnd{line-height:40px; display:inline-block; width:49%; text-align: center; }
+.container{padding-top: 20px; display:flex; flex-direction: row; flex-wrap:wrap; justify-content: space-around;}
+.input{border: 2px solid #FAB48E; font-size:15px;}
+.input:focus{outline:none;}
+.btn{background:#fff; color:#FAB48E; border: 2px solid #FAB48E; border-radius: 10px; font-size:15px;}
+.btn:focus{outline:none;}
+.con1{flex-basis:50px;}
+.con2{flex-basis:50px;}
+.con3{flex-basis:50px;}
+.result{position: absolute; bottom:0px; right:0px; margin-right: 10px; margin-bottom:10px;}
+.score{line-height: 65px; }
